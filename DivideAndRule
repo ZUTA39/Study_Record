@@ -2,6 +2,7 @@ In my view, DivideAndRule is a method which can make a very big problem divide i
 Always, these small questions have the same mode, if you understand what this mode actually is, then, the solution of this problem is easy to get.
 For example, here is a classic problem about Divide and Rule --- Hanoi Tower.
 
+```
 #include <iostream>
 #include <cstdio>
 #include <algorithm>
@@ -30,7 +31,7 @@ void Hanoi(int n, char first, char second, char third) {
         Hanoi(n - 1, third, second, first);
     }
 }
-
+```
 Trough this example, you can clearly understand how the Divide and Rule run.
 The Recursion use this method usually, and recusion is also used on Graph and Tree.
 Though this part seems easy to understand, it always hard to edit the Recursive boundary and Recurive condition. Those are most improtant in Recusion.
