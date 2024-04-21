@@ -13,10 +13,23 @@ Since I'm a Chinese, I study with the profile with Chinse for the most part. I w
 ## Storage Structure of Binary Tree
 ### Sequential Storage
 This way to store the Binay Tree utilize the arry.
-
+```
+typedef struct {
+    int data;
+    int lchild;
+    int rchild;
+} BNode[MAXSIZE];
+```
 
 ### Chain Storage
-
+This way to store the Binary Tree utilize the Binary linked list.
+```
+typedef struct BNode{
+    int data;
+    struct BNode lchild;
+    struct BNode rchild;
+}BNode, Bitree;
+```
 
 ## Pre-order traversal
 ## Mid-order traversal
@@ -118,3 +131,4 @@ void Layorder(int root, int n) {
     }
 }
 ```
+## The Height and Depth of Binary Tree
