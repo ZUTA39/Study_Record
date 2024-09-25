@@ -1,4 +1,4 @@
-## This is a recording of my dayliy studying.这是我每天学习的记录。
-In this half of year, I study the Algorithm with this book 《Algorithm note》, practice in SunnyWhy.com now.
+# This is a recording of my dayliy studying.这是我日常学习的记录。
+In this half of year, I study the DataBase and Principles of computer composition.
 
-Last edit at 2024.4.21.
+Last edit at 2024.9.25
