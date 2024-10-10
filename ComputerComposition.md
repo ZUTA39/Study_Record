@@ -53,6 +53,7 @@
 冯诺依曼计算机由运算器，控制器，存储器，输入设备，输出设备。
 
 特点：
+
 ![image](./ComputerComposition_pic/Peculiarity.jpeg)
 
 核心特征为存储程序。
