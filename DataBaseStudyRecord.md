@@ -21,7 +21,7 @@
 
 1.构成
 
-![表的构成](./DataBase_pic/Table_concent.png)
+![Table_concent](./DataBase_pic/Table_concent.png)
 Table中描述了一批具有关联关系的数据，可将Table**称为**关系（意思是近似于不是等同）
 
 由上，我们可得到数据库的**定义**：相互之间有关联关系的若干个表（Table）的集合。
@@ -33,7 +33,7 @@ Table中描述了一批具有关联关系的数据，可将Table**称为**关系
 ### 什么是数据库系统
 
 数据库系统的构成：
-![数据库系统的构成](./DataBase_pic/DBMS_content.png)
+![DBMS_content](./DataBase_pic/DBMS_content.png)
 
 ### 从用户角度看数据库管理系统
 
@@ -65,22 +65,22 @@ Table中描述了一批具有关联关系的数据，可将Table**称为**关系
 
 - 区别
 
-![区别](./DataBase_pic/SQL_difference.png)
+![SQL_difference](./DataBase_pic/SQL_difference.png)
 (此处的高级语言忽略了打开文件等操作)
 
 - 联系
 
-![联系](./DataBase_pic/SQL_connection.png)
+![SQL_connection](./DataBase_pic/SQL_connection.png)
 
 ### 从系统角度看数据库管理系统
 
 即数据库执行的一系列例行程序。
 
-![功能](./DataBase_pic/System_func.png)
+![System_func](./DataBase_pic/System_func.png)
 
 ​数据库语言及其编译、查询实现与查询优化、事务处理功能以及数据存储与索引等其他功能。
 
-## 数据库系统的结构与演变
+## 数据库系统的结构
 
 重难点：
 
@@ -94,7 +94,7 @@ Table中描述了一批具有关联关系的数据，可将Table**称为**关系
 
 数据库系统的 ***结构抽象*** 一般由用户层，应用程序层，DBMS层，数据库层组成。
 
-![image](./DataBase_pic/DBS_contain.png)
+![DBS_contain](./DataBase_pic/DBS_contain.png)
 
 而DBMS层管理数据，又将数据分为了三个层次。即为后文所说的三级模式。
 
@@ -117,16 +117,16 @@ Table中描述了一批具有关联关系的数据，可将Table**称为**关系
 #### 三级模式与两层映像
 
 - **三级模式**
-  ![image](./DataBase_pic/SchemaAndView.png)
+  ![SchemaAndView](./DataBase_pic/SchemaAndView.png)
   如果只说视图，一般指的是外部视图，即给用户看的视图。外部视图可以有多个。
   只说模式，一般指概念模式。
 - **两层映像**
   将一种模式（结构）映射为另一种模式（结构），这里映射的 ***过程*** 称为映像。
-  ![image](./DataBase_pic/Mapping.png)
+  ![Mapping](./DataBase_pic/Mapping.png)
 
 三级模式两层映像即为数据库的标准结构。
 
-![image](./DataBase_pic/StandardStructure.png)
+![StandardStructure](./DataBase_pic/StandardStructure.png)
 
 为保证数据库可以独立改变模式而不影响其他，数据库系统有两个独立性：
 
@@ -141,7 +141,7 @@ Table中描述了一批具有关联关系的数据，可将Table**称为**关系
 
 规定模式统一描述方式的模型，包括：数据结构，操作和约束。
 数据模型是对模式本身结构的抽象，模式是对数据本身结构形式的抽象。（即：模型是数据结构的结构）
-![image](./DataBase_pic/ModelExample.jpeg)
+![ModelExample](./DataBase_pic/ModelExample.jpeg)
 
 三大经典数据模型对应的数据结构：
 
@@ -149,4 +149,6 @@ Table中描述了一批具有关联关系的数据，可将Table**称为**关系
 - 层次模型：树形式
 - 网状模型：图形式
 
-### 数据库系统的演变与发展
+## 关系模型
+
+数据库的发展是由层次数据库，网状数据库演化为关系数据库。
