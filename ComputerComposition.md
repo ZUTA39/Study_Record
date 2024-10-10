@@ -54,4 +54,5 @@
 
 特点：
 ![image](./ComputerComposition_pic/Peculiarity.jpeg)
+
 核心特征为存储程序。
