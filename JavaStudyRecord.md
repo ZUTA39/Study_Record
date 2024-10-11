@@ -201,6 +201,57 @@ arrNew[arr.length+1] = 4;
 arr = arrNew;
 ```
 
+在Java中，数组本身没有方法，因为它们是基本类型的对象。然而，Java提供了许多实用工具类和方法来操作数组，主要集中在java.util.Arrays类中。以下是一些常用的数组操作方法：
+1. 排序
+
+```java
+int[] a = {5, 3, 8, 1, 2};
+Arrays.sort(a);
+System.out.println(Arrays.toString(a)); // 输出: [1, 2, 3, 5, 8]
+```
+
+2. 查找
+
+```java
+int index = Arrays.binarySearch(a, 3);
+System.out.println(index); // 输出: 2 (数组必须是已排序的)
+```
+
+3. 填充
+
+```java
+int[] b = new int[5];
+Arrays.fill(b, 7);
+System.out.println(Arrays.toString(b)); // 输出: [7, 7, 7, 7, 7]
+```
+
+4. 比较
+
+```java
+int[] c = {1, 2, 3, 4, 5};
+int[] d = {1, 2, 3, 4, 5};
+boolean isEqual = Arrays.equals(c, d);
+System.out.println(isEqual); // 输出: true
+```
+
+5. 复制
+
+```java
+int[] e = Arrays.copyOf(c, c.length);
+System.out.println(Arrays.toString(e)); // 输出: [1, 2, 3, 4, 5]
+```
+6. 转换为字符串
+
+```java
+String arrayString = Arrays.toString(c);
+System.out.println(arrayString); // 输出: [1, 2, 3, 4, 5]
+```
+7. 多维数组的操作
+
+```java
+int[][] multiArray = {{1, 2}, {3, 4}};
+System.out.println(Arrays.deepToString(multiArray)); // 输出: [[1, 2], [3, 4]]
+```
 ### 新增的for-each循环
 
 说是新增，其实在python也见过。就是：对于数组/容器的每一个字符……
